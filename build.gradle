@@ -1,0 +1,30 @@
+group 'com.alonmack'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:1.2.7.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-actuator:1.2.7.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    testCompile("org.springframework.boot:spring-boot-starter-test:1.2.7.RELEASE")
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath(
+                "org.springframework.boot:spring-boot-gradle-plugin:1.2.7.RELEASE",
+        )
+    }
+}
