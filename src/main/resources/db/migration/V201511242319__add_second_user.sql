@@ -1,0 +1,1 @@
+INSERT INTO person (email, login, password) VALUES ('qeqeq@Gmail.com', 'q123', '123')

@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class FirstController {
+public class AuthController {
 
     private PersonService personService;
 
     @Autowired
-    public FirstController(PersonService personService) {
+    public AuthController(PersonService personService) {
         this.personService = personService;
     }
 
