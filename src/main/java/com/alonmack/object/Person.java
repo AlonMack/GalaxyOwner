@@ -11,7 +11,7 @@ public class Person {
 
     @Id
     @Column
-    @GeneratedValue(generator = "increment")
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @GenericGenerator(name= "increment", strategy= "increment")
     private int id;
     @Column

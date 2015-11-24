@@ -1,0 +1,7 @@
+CREATE TABLE person
+(
+  id       SERIAL PRIMARY KEY,
+  email    CHARACTER VARYING(255),
+  login    CHARACTER VARYING(255),
+  password CHARACTER VARYING(255)
+)
